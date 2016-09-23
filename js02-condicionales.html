@@ -4,8 +4,12 @@
 	<meta charset="utf-8">
 	<script type="text/javascript">
 	var cierto=true;
-	var asignada=cierto?'hola':'adios';
-	alert(asignada);
+	var nombre = prompt("¿Como te llamas?");
+   
+	if (nombre != null){
+		nombre = "anonimo";
+	}
+	alert("Hola " + nombre);
 	/*
 	switch(variable)
 	{	case 1: codigo

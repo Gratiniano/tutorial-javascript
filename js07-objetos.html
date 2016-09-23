@@ -4,13 +4,21 @@
 	<meta charset="utf-8">
 	<title>Objetos</title>
 	<script type="text/javascript">
-		var gato = new Gato("peludo");
+		var gato = new Gato("Berskha");
 		function Gato(nombre){
 			this.nombre=nombre;
 		}
-		alert(gato.nombre);
-		alert(gato);
-
+		gato.sexo ="Hembra";
+		gato.raza="Bosque de Noruega";
+		gato.color_ojos ="verde";
+		var resultado = "";
+		for (var i in gato){
+			if (gato.hasOwnProperty(i)){
+				resultado += "gato."+i +"="+gato[i] + "\n";
+			}
+			
+		}
+		alert(resultado);
 		//Comprueba el objeto en la consola del navegador
 	</script>
 </head>

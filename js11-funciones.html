@@ -12,6 +12,7 @@
 		/*
 		//1-Mostramos el funcionamiento normal:
 		RealizarProceso(10,20,30);
+		// esta sentencia generaría un type error al evaluar 30(10,20)
 		MostrarResta(10,20);
 		*/
 
@@ -20,20 +21,19 @@
 		function MostrarMultiplicacion(a,b){
 			alert("Multiplicacion="+(a*b).toString());	
 		}
-		/*
+		
 		//Ojo antes de probar el siguiente ejemplo hay
 		//que descomentar la linea de la llamada a d(a,b)
 		//en la funcion RealizarProceso
 		RealizarProceso(10,20,MostrarResta);
-		*/
+		
 
-		/*
+		
 		//3-Ahora simplemente cambiamos la llamada a resta
 		//por una llamada a multiplicacion
 		RealizarProceso(10,20,MostrarMultiplicacion);
-		*/
-
 		
+				
 	</script>
 </head>
 <body>

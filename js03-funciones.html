@@ -2,6 +2,7 @@
 <html>
 <head>
 	<meta charset="utf-8">
+	<title>Ejemplo funciones JS</title>
 	<script type="text/javascript">
 		function factorial(num)
 		{
@@ -13,7 +14,12 @@
 			*/
 			return fac;
 		}
-		alert(factorial(6));
+		var fac = prompt("Introduzca un numero:", 10);
+
+		if (isNaN(fac)){
+			alert ("El valor introducido no es un número");
+		}
+		else {alert(factorial(fac))};
 
 		/* Otro modo de declarar funciones
 		var factorial=function(num){

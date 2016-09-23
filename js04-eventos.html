@@ -8,11 +8,22 @@
 		});
 		window.addEventListener("keydown",teclaPulsada);
 		function botonClick(evento){
-			alert("Hola colega");
+			alert("Hola colega, soy el Click");
 			alert(evento.type);
 			alert(evento.screenX);
-			/* boton.removeEventListener("click",botonClick) */
+			boton.removeEventListener("click",botonClick);
+			boton.addEventListener("dblclick", botonDblClick)
 		};
+
+		function botonDblClick(evento){
+			alert("Hola colega. Soy el DobleClick");
+			alert(evento.type);
+			alert(evento.screenX);
+			boton.removeEventListener("dblclick",botonDblClick);
+			boton.addEventListener("click", botonClick)
+
+
+		};		
 		function teclaPulsada(evento)
 		{
 			alert(evento.keyCode);
